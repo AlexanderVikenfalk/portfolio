@@ -438,7 +438,7 @@ animations;
 
     .tech-stack__letter:hover::before {
         opacity: 1;
-        transition: opacity 0.1s ease-in;
+        transition: opacity 0.01s ease-in;
     }
 
     .tech-stack__letter:nth-of-type(1n)::before,
