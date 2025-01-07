@@ -326,7 +326,6 @@ animations;
     .techstack__wrapper {
         padding-block: var(--space-m);
         overflow: hidden;
-        user-select: none;
         --gap: var(--space-2xs);
         display: flex;
         gap: var(--gap);
@@ -401,6 +400,7 @@ animations;
     }
 
     .techstack__letter {
+        user-select: none;
         color: var(--color-bg);
         background-color: var(--color-fg);
         margin-top: var(--space-2xs-xs);
@@ -411,14 +411,11 @@ animations;
         justify-content: center;
         cursor: pointer;
         -webkit-user-select: none;
-        user-select: none;
         border-radius: 0.375rem;
         text-transform: uppercase;
         --un-text-opacity: 1;
-        transition: color 0.1s ease-in, background-color 0.1s ease-in, border-color 0.1s ease-in;
-        transition-duration: 1s;
-        transition-delay: .1s;
-        transition-timing-function: cubic-bezier(.25, .46, .45, .94);
+        transition: color 0.1s , background-color 0.1s , border-color 0.1s ;
+        transition-duration: 0.5s;
         font-size: var(--space-m);
         will-change: transform, opacity;
     }
@@ -433,7 +430,8 @@ animations;
         z-index: -1;
         content: '';
         background: var(--color-fg);
-        transition: opacity 3s ease-out;
+        transition: opacity 2s ease-out;
+        transition-delay: 0.5s;
         opacity: 0;
     }
 
