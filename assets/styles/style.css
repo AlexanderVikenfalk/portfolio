@@ -1012,7 +1012,6 @@ animations;
     .flex-group {
         column-gap: var(--space-m);
         display: flex;
-        flex-wrap: wrap;
         width: fit-content;
     }
 
