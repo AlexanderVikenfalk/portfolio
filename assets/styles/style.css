@@ -1043,10 +1043,16 @@ animations;
         color: var(--color-primary-dark);
         background-color: inherit;
         padding-top: var(--space-xs);
-        font-size: var(--fs-300);
+        font-size: var(--fs-400);
         font-weight: 300;
         white-space: nowrap;
         text-align: center;
+    }
+
+    @media screen and (min-width: 45em) {
+        .caption-inner {
+            font-size: var(--fs-300);
+        }
     }
 
     .even-columns {
